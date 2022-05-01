@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef } from "react";
 import { StyleSheet, View, Image, Linking } from "react-native";
 import { SimpleLineIcons } from "@expo/vector-icons";
-import MapView, { Marker } from "react-native-maps";
+import MapView, { PROVIDER_GOOGLE } from "react-native-maps";
 import * as Location from "expo-location";
 import { response } from "./Markers";
 
@@ -43,7 +43,7 @@ export default function Beside({ navigation }) {
           initialRegion={locationBeside}
           showsUserLocation={true}
           userLocationFastestInterval={5000}
-          provider="google"
+          provider={PROVIDER_GOOGLE}
           ref={mapRef}
         >
           {response.map((marker) => (

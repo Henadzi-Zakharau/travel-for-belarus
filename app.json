@@ -20,12 +20,16 @@
       "supportsTablet": true
     },
     "android": {
-      "package": "zakharau.trave1sforBelarus",
+      "package": "com.zakharau.trave1sforBelarus",
       "adaptiveIcon": {
         "foregroundImage": "./assets/icon-napr.png",
         "backgroundColor": "#FFFFFF"
+      },
+      "config": {
+        "googleMaps": {
+          "apiKey": "AIzaSyB04brxcNs85hm3A9FnFOg6aHBdARYRktM"
+        }
       }
-      
     },
     "web": {
       "favicon": "./assets/favicon.png"

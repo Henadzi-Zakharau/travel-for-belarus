@@ -4,6 +4,7 @@ import { StyleSheet, View, Text, TouchableOpacity } from "react-native";
 import * as Location from "expo-location";
 import { GooglePlacesAutocomplete } from "react-native-google-places-autocomplete";
 import MapViewDirections from "react-native-maps-directions";
+import config from "../config";
 
 export default function Map({ navigation }) {
   const loadScreen = () => {
@@ -72,7 +73,7 @@ export default function Map({ navigation }) {
           }}
           fetchDetails={true}
           query={{
-            key: "" ,
+            key: config.API_KEY,
             language: "en",
           }}
           styles={{
@@ -89,7 +90,7 @@ export default function Map({ navigation }) {
           showsUserLocation={true}
           userLocationFastestInterval={5000}
           showsTraffic={true}
-          provider="google"
+          provider={PROVIDER_GOOGLE}
           ref={mapEl}
         >
           <Marker coordinate={userLocation} />
@@ -98,7 +99,7 @@ export default function Map({ navigation }) {
             <MapViewDirections
               origin={location}
               destination={destination}
-              apikey= ""
+              apikey={config.API_KEY}
               strokeWidth={5}
               strokeColor="#FF4500"
               optimizeWaypoints={true}
