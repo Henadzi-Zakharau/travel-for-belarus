@@ -1,12 +1,12 @@
 {
   "expo": {
     "name": "Travels for Belarus",
-    "slug": "trave1sforBelarus",
+    "slug": "travelsforBelarus",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/icon-napr.png",
+    "icon": "./assets/ukaz.png",
     "splash": {
-      "image": "./assets/splash.png",
+      "image": "./assets/ukaz.png",
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
@@ -20,19 +20,19 @@
       "supportsTablet": true
     },
     "android": {
-      "package": "com.zakharau.trave1sforBelarus",
+      "package": "com.zakharau.travelsforBelarus",
       "adaptiveIcon": {
-        "foregroundImage": "./assets/icon-napr.png",
+        "foregroundImage": "./assets/icon map.png",
         "backgroundColor": "#FFFFFF"
       },
       "config": {
         "googleMaps": {
-          "apiKey": ""
+          "apiKey": "AIzaSyCcob0xqCmXdUCroP9AkfwjWaOeGQ_igyg"
         }
       }
     },
     "web": {
-      "favicon": "./assets/favicon.png"
+      "favicon": "./assets/icon map.png"
     }
   }
 }
