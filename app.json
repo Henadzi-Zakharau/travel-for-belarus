@@ -4,9 +4,9 @@
     "slug": "travelsforBelarus",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/ukaz.png",
+    "icon": "./assets/icon map.png",
     "splash": {
-      "image": "./assets/ukaz.png",
+      "image": "./assets/icon map.png",
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
@@ -27,7 +27,7 @@
       },
       "config": {
         "googleMaps": {
-          "apiKey": "AIzaSyCcob0xqCmXdUCroP9AkfwjWaOeGQ_igyg"
+          "apiKey": ""
         }
       }
     },
